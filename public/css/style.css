@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+.main-wrap {
+  height: 100%;
+  background-image: url('../public/img/wallpapers/main_2.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-wrap .main-enter {
+  width: 33%;
+  box-shadow: black 0px 1px 10px 1.3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.main-wrap .main-enter .main-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+.main-wrap .main-enter h1, .main-wrap .main-enter span {
+  z-index: 999;
+}
+.main-wrap .main-enter h1 {
+  font-size: 3rem;
+}
+.main-wrap .main-enter span {
+  font-size: 1.7rem;
+  box-shadow: black 0px 0px 10px 1.3px;
+    
+}
