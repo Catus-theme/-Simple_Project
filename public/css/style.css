@@ -4,7 +4,7 @@ body, html {
 }
 .main-wrap {
   height: 100%;
-  background-image: url('../public/img/wallpapers/main_2.jpg');
+  background-image: url('../public/img/wallpapers/1.jpg');
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,9 +14,8 @@ body, html {
   justify-content: center;
   flex-direction: column;
 }
-.main-wrap .main-enter {
-  width: 33%;
-  box-shadow: black 0px 1px 10px 1.3px;
+.main-wrap .main-article {
+  width: 60%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -24,22 +23,35 @@ body, html {
 
   position: relative;
 }
-
-.main-wrap .main-enter .main-cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.2;
+.main-wrap .main-article h1 {
+  margin-top: 4.4vw;
+  margin-bottom: 0;
+  font-size: 11vw;
+  font-family: Sketch;
+  color: #1685c7;
 }
-.main-wrap .main-enter h1, .main-wrap .main-enter span {
-  z-index: 999;
+.main-article h1 b {
+  color: #f4acaf
 }
-.main-wrap .main-enter h1 {
-  font-size: 3rem;
+.main-article .main-enter {
+  display: flex;
+  align-items: flex-end;
 }
-.main-wrap .main-enter span {
-  font-size: 1.7rem;
-  box-shadow: black 0px 0px 10px 1.3px;
-    
+.main-article .main-enter p {
+  margin: 0;
+  font-size: 3vw;
+  font-family: senal;
+  color: #26749b;
+  margin-left: 11vw;
+  flex-grow: 0.8;
+}
+.main-article .main-enter a {
+  font-family: nanum;
+  font-size: 2vw;
+  text-decoration-line: none;
+  color: #e78188;
+  flex-grow: 0.2;
+}
+.main-article .main-enter a:hover {
+  color: #1685c7;
 }

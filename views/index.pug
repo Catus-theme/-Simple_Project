@@ -4,12 +4,15 @@ html
     meta( charset='UTF-8' )/
     title CATUS - SimpleProject
     style
+      include ../public/css/fonts.css
       include ../public/css/style.css
     script
       include ../public/js/commons.js
   body
     article.main-wrap
-      div.main-enter
-        div.main-cover
-        h1 Catus Story
-        span 보러가기
+      div.main-article
+        h1 Catus 
+          b Story
+        div.main-enter
+          p &#45; 캐터스 이야기 &#45;
+          a( href='/hello' ) 보러가기 &#9654;

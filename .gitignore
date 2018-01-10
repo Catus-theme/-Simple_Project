@@ -1,3 +1,4 @@
 node_modules/*
-.swap
+*.bak
+*.swap
 /package-lock.json
