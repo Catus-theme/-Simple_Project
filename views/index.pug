@@ -3,5 +3,16 @@ html
   head
     meta( charset='UTF-8' )/
     title CATUS - SimpleProject
+    style
+      include ../public/css/fonts.css
+      include ../public/css/style.css
+    script
+      include ../public/js/commons.js
   body
-    h1 hello CATUS !
+    article.main-wrap
+      div.main-article
+        h1 Catus 
+          b Story
+        div.main-enter
+          p &#45; 캐터스 이야기 &#45;
+          a( href='/hello' ) 보러가기 &#9654;

@@ -2,6 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const express = require('express');
 const app = express();
+const path = require('path');
 const mongo = require('mongodb');
 // client server port 
 const port = 3000;
@@ -21,7 +22,7 @@ const dbName = 'board';
 
 app.set('views', __dirname + ('/views'));
 app.set('view engine', 'pug');
-app.use('/public', express.static(__dirname + '/public'));
+app.use('/public', express.static(path.join(__dirname + '/public')));
 app.locals.pretty = true;
 
 app.get('/', ( req, res ) => {

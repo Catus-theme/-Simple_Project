@@ -1,0 +1,57 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+.main-wrap {
+  height: 100%;
+  background-image: url('../public/img/wallpapers/1.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-wrap .main-article {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+.main-wrap .main-article h1 {
+  margin-top: 4.4vw;
+  margin-bottom: 0;
+  font-size: 11vw;
+  font-family: Sketch;
+  color: #1685c7;
+}
+.main-article h1 b {
+  color: #f4acaf
+}
+.main-article .main-enter {
+  display: flex;
+  align-items: flex-end;
+}
+.main-article .main-enter p {
+  margin: 0;
+  font-size: 3vw;
+  font-family: senal;
+  color: #26749b;
+  margin-left: 11vw;
+  flex-grow: 0.8;
+}
+.main-article .main-enter a {
+  font-family: nanum;
+  font-size: 2vw;
+  text-decoration-line: none;
+  color: #e78188;
+  flex-grow: 0.2;
+}
+.main-article .main-enter a:hover {
+  color: #1685c7;
+}
