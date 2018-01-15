@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title add 
+    style.
+      input,
+      textarea,
+      h1 {
+        display: block;
+        margin: 10px 0;
+      }
+      .editorDIV {
+        width: 300px; 
+        height: 300px;
+        border: 1px solid #333;
+      }
+      .buttons {
+        margin: 10px 0;
+      }
+  body
+    if(!board)
+      h1 게시팔 등록해봐
+      form(method='post' action='/board')
+        input(type='text' name='title' placeholder="제목")
+        input(type='text' name='author' placeholder="작성자")
+        input(type='password' name='pw' placeholder="암호")
+        .buttons
+          button.BOLD(type='button' onclick='document.execCommand("bold")') B
+          button.aignLeft(type='button' onclick='document.execCommand("justifyleft")') left
+          button.aignCenter(type='button' onclick='document.execCommand("justifycenter")') center
+          button.aignRight(type='button' onclick='document.execCommand("justifyright")') right 
+          button(type='button' onclick='convertToEditor()') EDITOR Show
+          button(type='button' onclick='convertToHTML()') HTML Show
+        //- div
+        //-   .editorDIV(name="content" contenteditable='true')
+        //-   .editorHTMLDIV
+        textarea(name='content', cols="30", rows="10")
+        input(type='submit' value='등록')
+    if(board) 
+      h1 게시팔 수정해봐요
+      form(method='post' action=`/update/${board._id}`)
+        input(type='text' name='title' value=board.title placeholder="제목")
+        input(type='text' name='author' value=board.author placeholder="작성자")
+        input(type='password' name='pw' value=board.pw placeholder="암호")
+        textarea(name='content', cols="30", rows="10")=board.content
+        input(type='submit' value='등록')
+    script.
+      $(document).ready(function(){
+        $('.editorHTMLDIV').hide();
+      });
+      function convertToHTML() {
+        $('.editorHTMLDIV').text.($('.editorDIV').html());
+        $('.editorHTMLDIV').show();
+        $('.editorDIV').hide();
+      }

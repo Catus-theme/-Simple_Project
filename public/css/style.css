@@ -9,7 +9,6 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,7 +19,6 @@ body, html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   position: relative;
 }
 .main-wrap .main-article h1 {
@@ -29,6 +27,8 @@ body, html {
   font-size: 11vw;
   font-family: Sketch;
   color: #1685c7;
+  font-weight: 100; 
+  text-shadow: #26749b 0px 1px 1px;
 }
 .main-article h1 b {
   color: #f4acaf

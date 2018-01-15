@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title board 
+    style.
+      li {
+        margin: 10px 0;
+        list-style: none;
+      }
+      span,
+      p {
+        margin : 0 10px;
+      }
+      a span {
+        font-size: 1.2rem;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      .delete {
+        color: red;
+        font-weight: bold;
+      }
+      .update {
+        color: blue;
+        font-weight: bold;
+      }
+  body
+    ul 
+      li
+        span 게시글 번호
+        span 제목
+        span 작성자
+        span 비밀번호
+        span 등록날짜
+      each board, index in list
+        li
+          span=index+1
+          a(href=`/board/detail/${board._id}`) 
+            span=board.title
+          span=board.author
+          span=board.pw
+          span=new Date(board.date).toLocaleDateString()
+          span
+            a.delete(href=`/board/del/${board._id}`) 삭제
+          span
+            a.update(href=`/board/modify/${board._id}`) 수정 
+    span 
+      a(href="/board/add") 등록하기
+    span 
+      a(href="/") 홈으로 가기
