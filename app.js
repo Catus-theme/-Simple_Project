@@ -10,7 +10,7 @@ app.use('/public', express.static(path.join(__dirname + '/public')));
 app.locals.pretty = true;
 
 app.get('/', ( req, res ) => {
-  res.render('index');
+  res.render('reg_board');
 });
 
 app.listen( port, () => {

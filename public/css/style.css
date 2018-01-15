@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body, html {
   margin: 0;
   height: 100%;
@@ -54,4 +58,76 @@ body, html {
 }
 .main-article .main-enter a:hover {
   color: #1685c7;
+}
+
+/*    */
+.reg-wrap {
+  height: 100%;
+  background-image: url('../public/img/wallpapers/reg_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.reg-wrap .reg-header {
+  position: relative;
+  z-index: 10;
+}
+.reg-wrap .reg-header h1{
+  font-family: Sketch;
+  font-size: 8.7em;
+  color: #1685c7;
+}
+.reg-wrap .reg-header span:last-child{
+  color: #e78188;
+}
+.reg-wrap .reg-frm {
+  z-index: 9;
+  width: 33%;
+  position: relative;
+}
+.reg-wrap .reg-frm > div{
+  width: 100%;
+  padding-top: 4em;
+  border: 3px solid #e78188;
+  border-radius: 2em;
+  background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5));   
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.reg-wrap .reg-frm > div > div {
+  z-index: 100;
+  margin: 1em;
+}
+.reg-wrap .reg-frm > div > div span {
+  font-family:  bmjua;
+  font-size: 2.3em;
+  color: #1685c7;
+  width: 4em;
+  display: -webkit-inline-box;
+}
+.reg-wrap .reg-frm > div > div input {
+  border-radius: 0.5em;
+  border: 3px solid #ffffff;
+  width: 11em;
+  height: 1.7em;
+}
+.reg-wrap .reg-frm > div > div input[type='text'] , .reg-wrap .reg-frm > div > div input[type='password'] {
+  font-size: 1.7rem;
+  padding: 0;
+  background-color: #ffffff;
+}
+.reg-wrap .reg-frm > div > div button {
+  width: 11em;
+  height: 2.3em;
+  font-family:  bmjua;
+  font-size:  2.3em;
+  background-color: #f3cbce;
+  color: #e97483;
 }

@@ -10,3 +10,11 @@
   font-family: nanum;
   src: url(../public/fonts/NanumScript.ttc);
 }
+@font-face {
+  font-family: bmjua;
+  src: url(../public/fonts/BMJUA.ttf);
+}
+@font-face {
+  font-family: pgo;
+  src: url(../public/fonts/pgo_b.ttf);
+}

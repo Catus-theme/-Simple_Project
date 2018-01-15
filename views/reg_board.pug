@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta( charset='UTF-8' )
+    title CATUS - SimpleProject
+    style
+      include ../public/css/fonts.css
+      include ../public/css/style.css
+    script
+      include ../public/js/commons.js
+  body
+    section.reg-wrap
+      header.reg-header
+        h1
+          span Catus 
+          span Stroy
+      form#reg-frm.reg-frm(action="", method="post")
+        div
+          div
+            span 제목
+            input(type='text')
+          div
+            span 작성자
+            input(type='text')
+          div
+            span 비밀번호
+            input(type='password')
+          div
+            button(type='submit') 등록하기
+
