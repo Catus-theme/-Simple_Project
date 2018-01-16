@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta( charset='UTF-8' )
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Comatible', content='ie=edge')
+    title CATUS - SimpleProject
+    link(rel='stylesheet' type='text/css' href='/public/css/fonts.css')
+    link(rel='stylesheet' type='text/css' href='/public/css/style.css')
+    script(src='/public/js/commons.j')
+  body
+    section.reg-wrap
+      form#reg-frm.reg-frm(action="/board", method="post")
+        header.reg-header
+          h1
+            span Catus 
+            span Stroy
+        div
+          div
+            span 제목
+            input(type='text' name='title' placeholder='제목')
+          div
+            span 작성자
+            input(type='text' name='author' placeholder='작성자')
+          div
+            span 비밀번호
+            input(type='password' name='pw' placeholder='암호')
+          div
+            button(type='submit') 등록하기
+

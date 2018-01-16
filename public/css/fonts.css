@@ -1,20 +1,20 @@
 @font-face {
   font-family: Sketch;
-  src: url(../public/fonts/Sketch.ttf);
+  src: url(/public/fonts/Sketch.ttf);
 }
 @font-face {
   font-family: senal;
-  src: url(../public/fonts/senal.ttf);
+  src: url(/public/fonts/senal.ttf);
 }
 @font-face {
   font-family: nanum;
-  src: url(../public/fonts/NanumScript.ttc);
+  src: url(/public/fonts/NanumScript.ttc);
 }
 @font-face {
   font-family: bmjua;
-  src: url(../public/fonts/BMJUA.ttf);
+  src: url(/public/fonts/BMJUA.ttf);
 }
 @font-face {
   font-family: pgo;
-  src: url(../public/fonts/pgo_b.ttf);
+  src: url(/public/fonts/pgo_b.ttf);
 }

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title CATUS - SimpleProejct
+    link(rel='stylesheet' type='text/css' href='/public/css/fonts.css')
+    link(rel='stylesheet' type='text/css' href='/public/css/style.css')
+    script(src='/public/js/commons.j')
+  body
+    div.list-wrap
+      section
+        header
+          h1
+            a(href='/')
+              sapn Catus 
+              span Story
+        article
+          div.list-cover
+          div
+            ul
+              li
+                span#boardNo 번호
+                span#boardTitle 제목
+                span#boardAuthor 작성자
+                span#boardDate 작성일
+                span#boardBtns
+          div
+            ul
+              each board, index in list
+                li
+                  span#boardNo= index+1
+                  span#boardTitle 
+                    a(href=`/board/detail/${board._id}`)= board.title
+                  span#boardAuthor= board.author
+                  span#boardDate= new Date(board.date).toLocaleDateString()
+                  span#boardBtns
+                    a(href=`/board/del/${board._id}`) 삭제 
+                    a(href=`/board/modify/${board._id}`) 수정 
+        footer
+          a(href='/board/add') 글쓰기
