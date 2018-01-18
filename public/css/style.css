@@ -3,7 +3,6 @@
   padding: 0;
 }
 body, html {
-  margin: 0;
   height: 100%;
 }
 .main-wrap {
@@ -74,8 +73,7 @@ body, html {
   align-items: center;
 }
 .reg-wrap .reg-frm {
-  z-index: 9;
-  width: 33%;
+  width: 42rem;
   position: relative;
 
   display: flex;
@@ -83,16 +81,15 @@ body, html {
   align-items: center;
 }
 .reg-wrap .reg-frm .reg-header {
-  top: -4em;
+  top: -4rem;
   position: absolute;
-  z-index: 10;
 }
-.reg-wrap .reg-frm .reg-header h1{
+.reg-wrap .reg-frm .reg-header h1 {
   font-family: Sketch;
   font-size: 8.7em;
   color: #1685c7;
 }
-.reg-wrap .reg-frm .reg-header span:last-child{
+.reg-wrap .reg-frm .reg-header h1 span:last-child{
   color: #e78188;
 }
 
@@ -108,7 +105,6 @@ body, html {
   align-items: center;
 }
 .reg-wrap .reg-frm > div > div {
-  z-index: 100;
   margin: 1em;
 }
 .reg-wrap .reg-frm > div > div span {
@@ -123,11 +119,8 @@ body, html {
   border: 3px solid #ffffff;
   width: 11em;
   height: 1.7em;
-}
-.reg-wrap .reg-frm > div > div input[type='text'] , .reg-wrap .reg-frm > div > div input[type='password'] {
   font-size: 1.7rem;
-  padding: 0;
-  background-color: #ffffff;
+  padding: 0.3em;
 }
 .reg-wrap .reg-frm > div > div button {
   width: 11em;
@@ -157,12 +150,12 @@ body, html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 60%;
+  width: 66vw;
 
   position: relative;
 }
 .list-wrap section header {
-  top: -3.7vw;
+  top: -4.7rem;
   position: absolute;
   z-index: 44;
 }
@@ -178,8 +171,7 @@ body, html {
 }
 .list-wrap section header h1 {
   font-family: Sketch;
-  font-size: 8.7em;
-  color: #1685c7;
+  font-size: 8.7rem;
   text-align: center;
 }
 
@@ -223,17 +215,16 @@ body, html {
   background-color: #FFFFFF;
   background: radial-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
 }
-ul {
+.list-wrap article div ul {
   list-style: none;
 }
-div ul li {
+.list-wrap article div ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-ul li span {
+.list-wrap article div ul li span {
   text-align: center;
-  display: block;
   font-size: 2vw;
   font-family: bmjua;
   padding: 0.52vw 0;
@@ -285,7 +276,7 @@ div ul li span#boardBtns a {
 footer {
   display: flex;
   justify-content: flex-end;
-  width: 92%;
+  width: 83%;
   position: relative;
   top: 1vw;
 }
